@@ -1,0 +1,530 @@
+
+  *
+  {
+    font-family: 'Roboto', sans-serif;
+
+  }
+.myheader {
+    padding: 0px 15px 0px 15px;
+  }
+  
+  #navigation a {
+    text-decoration: none;
+    color: rgba(34, 34, 34, 0.8);
+  }
+  #navigation a:hover, a :focus {
+    color: black;
+  }
+  
+  .menu-left a {
+    display: inline-block;
+    position: relative;
+    padding-bottom: 10px;
+    transition: color .35s ease;
+  }
+  .menu-left a:before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    width: 0;
+    transition: width 0s ease, background .35s ease;
+  }
+  .menu-left a:after {
+    content: '';
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: 2px;
+    width: 0;
+    background: #000;
+    transition: width .35s ease;
+  }
+  .menu-left a:hover:before {
+    width: 100%;
+    background: #000;
+    transition: width .35s ease;
+  }
+  .menu-left a:hover:after {
+    width: 100%;
+    background: transparent;
+    transition: all 0s ease;
+  }
+  
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: .5rem 0;
+    background: rgba(255, 255, 255, 0.92);
+    z-index: 3;
+    will-change: transform;
+    transition: background 0.3s, -webkit-transform 0.5s cubic-bezier(0.694, 0.048, 0.335, 1);
+    transition: transform 0.5s cubic-bezier(0.694, 0.048, 0.335, 1), background 0.3s;
+    transition: transform 0.5s cubic-bezier(0.694, 0.048, 0.335, 1), background 0.3s, -webkit-transform 0.5s cubic-bezier(0.694, 0.048, 0.335, 1);
+    transform: translateY(0);
+    -webkit-transform: translateY(0);
+  }
+  header nav .logo {
+    float: left;
+    padding-top: .25rem;
+    padding-bottom: .25rem;
+    margin-right: 1rem;
+    font-size: 1.25rem;
+    line-height: inherit;
+    font-weight: 500;
+    color: black;
+  }
+  header nav .logo:after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+  header nav ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+  }
+  header nav ul li {
+    float: none;
+    margin-left: 0;
+  }
+
+  header nav ul li a {
+    display: block;
+  }
+ 
+  .hide-nav {
+    transform: translateY(-120% !important);
+    -webkit-transform: translateY(-120%) !important;
+  }
+  
+  ul.menu-left {
+    display: block;
+    max-height: 0;
+    overflow: hidden;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+    z-index: 10;
+  }
+ 
+  ul.menu-left:before {
+    content: '';
+    display: table;
+    clear: both;
+  }
+  ul.menu-left.collapse {
+    max-height: 15em !important;
+  }
+  
+  .nav-toggle {
+    display: block;
+    border-radius: 5px;
+    background-color: transparent;
+    float: right;
+    height: 38px;
+    width: 38px;
+    cursor: pointer;
+    padding: 8px 8px;
+  }
+  .nav-toggle.open span:first-child {
+    transform: rotate(45deg) translate(4.4px, 4.4px);
+  }
+  .nav-toggle.open span:nth-child(2) {
+    width: 0%;
+    opacity: 0;
+  }
+  .nav-toggle.open span:last-child {
+    transform: rotate(-45deg) translate(4.4px, -4.4px);
+  }
+  
+
+
+
+/* main section  */
+
+  
+ 
+
+  .mainquote
+  {
+      text-align: left;
+      color: #DD2657;
+  }
+  .mainp
+  {
+    text-align: left;
+    padding-left: 12px;
+    border-left: 3px solid #DD2657;
+    color: #100F17;
+    line-height: 1.6;
+  }
+
+/* end of main section  */
+
+
+/* button */
+
+.buttons {
+    margin: 10%;
+    text-align: center;
+}
+
+.btn-hover {
+    width: 200px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+    margin: 20px;
+    margin-left: -120px;
+    height: 45px;
+    text-align:center;
+    border: none;
+    background-size: 300% 100%;
+    border-radius: 50px;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.btn-hover:hover {
+    background-position: 50% 100%;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.btn-hover:focus {
+    outline: none;
+}
+
+.btn-hover.color-1 {
+    background-image: linear-gradient(to right, #8A2387, #E94057, #F27121);
+    box-shadow: 0 4px 15px 0 rgba(49, 196, 190, 0.75);
+}
+
+/* end of button  */
+
+
+
+  /* media queries */
+
+/* header  */
+  @media (min-width: 0) {
+    .myheader {
+      max-width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .myheader:after {
+      content: " ";
+      display: block;
+      clear: both;
+    }
+  }
+  @media (min-width: 576px) {
+    .myheader {
+      max-width: 540px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .myheader:after {
+      content: " ";
+      display: block;
+      clear: both;
+    }
+  }
+  @media (min-width: 768px) {
+    .myheader {
+      max-width: 720px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .myheader:after {
+      content: " ";
+      display: block;
+      clear: both;
+    }
+  }
+  @media (min-width: 992px) {
+    .myheader {
+      max-width: 960px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .myheader:after {
+      content: " ";
+      display: block;
+      clear: both;
+    }
+  }
+  @media (min-width: 1200px) {
+    .myheader {
+      max-width: 1170px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .myheader:after {
+      content: " ";
+      display: block;
+      clear: both;
+    }
+  }
+  /* end of header */
+
+
+  /* menuleft */
+  @media (min-width: 768px) {
+    ul.menu-left {
+      display: block !important;
+      float: right;
+      max-height: none;
+    }
+  }
+  /* end of menuleft */
+
+/* nav links */
+
+  @media (min-width: 576px) {
+    header nav ul li a {
+      display: block;
+      padding: .425rem 0rem;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    ul {
+      clear: both;
+    }
+    ul li {
+      padding: .5em 0;
+    }
+  }
+
+  @media (min-width: 768px) {
+    header nav ul li {
+      float: left;
+      margin-left: 1rem;
+    }
+  }
+  /* end of nav links */
+
+
+
+
+  /* nav toggle */
+  @media (min-width: 768px) {
+    .nav-toggle {
+      display: none;
+    }
+  }
+  .nav-toggle span {
+    position: relative;
+    display: block;
+    height: 2px;
+    width: 100%;
+    margin-top: 4px;
+    background-color: #000;
+    transition: all .25s;
+  }
+  /* end of nav toggle */
+
+
+  /* image slider  */
+
+  
+@media (min-width: 992px) {
+  .slider,
+  .slide {
+    height: 100vh;
+  }
+}
+.slide {
+  position: relative;
+}
+.slide .slide__img {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+@media (min-width: 992px) {
+  .slide .slide__img {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+  }
+}
+.slide .slide__img img {
+  max-width: 100%;
+  height: auto;
+  opacity: 1 !important;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  transition: all 1s ease;
+}
+.slide .slide__content {
+  position: absolute;
+  top: 50%;
+  left: 20%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+.slide .slide__content--headings {
+  text-align: center;
+  color: #FFF;
+}
+.slide .slide__content--headings h2 {
+  font-size: 4.5rem;
+  margin: 10px 0;
+}
+.slide .slide__content--headings .animated {
+  transition: all 0.5s ease;
+}
+.slider [data-animation-in] {
+  opacity: 0;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+  transition: opacity 0.5s ease 0.3s;
+}
+.slick-dotted .slick-slider {
+  margin-bottom: 30px;
+}
+.slick-dots {
+  position: absolute;
+  bottom: 25px;
+  list-style: none;
+  display: block;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+.slick-dots li {
+  position: relative;
+  display: inline-block;
+  margin: 0 5px;
+  padding: 0;
+  cursor: pointer;
+}
+.slick-dots li button {
+  border: 0;
+  display: block;
+  outline: none;
+  line-height: 0px;
+  font-size: 0px;
+  color: transparent;
+  padding: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.slick-dots li button:hover,
+.slick-dots li button:focus {
+  outline: none;
+}
+.simple-dots .slick-dots li {
+  width: 20px;
+  height: 20px;
+}
+.simple-dots .slick-dots li button {
+  border-radius: 50%;
+  background-color: white;
+  opacity: 0.25;
+  width: 20px;
+  height: 20px;
+}
+.simple-dots .slick-dots li button:hover,
+.simple-dots .slick-dots li button:focus {
+  opacity: 1;
+}
+.simple-dots .slick-dots li.slick-active button {
+  color: white;
+  opacity: 0.75;
+}
+.stick-dots .slick-dots li {
+  height: 3px;
+  width: 50px;
+}
+.stick-dots .slick-dots li button {
+  position: relative;
+  background-color: white;
+  opacity: 0.25;
+  width: 50px;
+  height: 3px;
+  padding: 0;
+}
+.stick-dots .slick-dots li button:hover,
+.stick-dots .slick-dots li button:focus {
+  opacity: 1;
+}
+.stick-dots .slick-dots li.slick-active button {
+  color: white;
+  opacity: 0.75;
+}
+.stick-dots .slick-dots li.slick-active button:hover,
+.stick-dots .slick-dots li.slick-active button:focus {
+  opacity: 1;
+}
+/* /////////// IMAGE ZOOM /////////// */
+@-webkit-keyframes zoomInImage {
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+            transform: scale3d(1, 1, 1);
+  }
+  to {
+    -webkit-transform: scale3d(1.1, 1.1, 1.1);
+            transform: scale3d(1.1, 1.1, 1.1);
+  }
+}
+@keyframes zoomInImage {
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+            transform: scale3d(1, 1, 1);
+  }
+  to {
+    -webkit-transform: scale3d(1.1, 1.1, 1.1);
+            transform: scale3d(1.1, 1.1, 1.1);
+  }
+}
+.zoomInImage {
+  -webkit-animation-name: zoomInImage;
+          animation-name: zoomInImage;
+}
+@-webkit-keyframes zoomOutImage {
+  from {
+    -webkit-transform: scale3d(1.1, 1.1, 1.1);
+            transform: scale3d(1.1, 1.1, 1.1);
+  }
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+            transform: scale3d(1, 1, 1);
+  }
+}
+@keyframes zoomOutImage {
+  from {
+    -webkit-transform: scale3d(1.1, 1.1, 1.1);
+            transform: scale3d(1.1, 1.1, 1.1);
+  }
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+            transform: scale3d(1, 1, 1);
+  }
+}
+.zoomOutImage {
+  -webkit-animation-name: zoomOutImage;
+          animation-name: zoomOutImage;
+}
+
+
+  /* end of image slider  */
