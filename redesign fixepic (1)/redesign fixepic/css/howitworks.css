@@ -1,0 +1,124 @@
+
+
+
+.links {
+ 
+    font-family: "parisplus-std", sans-serif;
+  }
+  
+  .mdl-grid,.mdl-cell
+  {
+    padding: 0;
+    margin: 0;
+  }
+  
+  /* end of navbar  */
+  .mdl-grid,.mdl-cell
+  {
+    padding: 0;
+    margin: 0;
+  }
+  
+  /* end of navbar  */
+  .mdl-layout__header-row
+  { 
+    max-height: 100px;
+    background-color: #FFF;
+    color: black;
+  }
+  
+  
+  .mdl-layout__header-row
+  .mdl-navigation .mdl-navigation__link
+  {
+    color: grey;
+  }
+  
+  
+  .mdl-layout__header .mdl-layout__drawer-button
+  {
+  
+  background-color: white;
+  color: black;
+  }
+  .mdl-layout__header-row 
+  {  
+      width: 100%;
+  }
+  
+  .mdl-navigation__link
+  { 
+    
+    font-weight: 400;
+    font-size: 14px;
+    color: gray;
+  }
+  .mdl-layout__header .mdl-layout__drawer-button
+  {
+    display: none;
+  }
+  
+  @media (max-width: 850px) 
+  {
+    .mdl-layout__header .mdl-layout__drawer-button
+  {
+    display: block;
+  
+  }
+  
+  }
+  
+  .cool-link::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 3px;
+    background: #F27121;
+    transition: width .3s;
+  }
+  
+  .cool-link:hover::after {
+    width: 100%;
+  /* transition: width .3s; */
+  }
+  
+  
+/* button */
+.btn-hover {
+    max-width: 400px;
+    padding:15px 35px;
+    height: auto;
+    font-size: 12px;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+    margin: 0px;
+    margin-top: 20px;
+    /* height: 55px; */
+    text-align:center;
+    border: none;
+    background-size: 300% 100%;
+  
+    border-radius: 5px;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+  }
+  
+  .btn-hover:hover {
+    background-position: 100% 0;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+  }
+  
+  .btn-hover:focus {
+    outline: none;
+  }
+  
+  .btn-hover.color-1 {
+    background-image: linear-gradient(to right, #F27121, #8A2387, #E94057);
+    box-shadow: 0 2px 5px 0 rgba(49, 196, 190, 0.75);
+  }
